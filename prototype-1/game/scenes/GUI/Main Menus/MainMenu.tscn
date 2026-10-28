@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bwv27pntnfi78"]
+
+[ext_resource type="Script" uid="uid://dc63ubkoa5758" path="res://game/scenes/GUI/Main Menus/MainMenu.cs" id="1_goi5m"]
+
+[node name="MainMenu" type="Control" unique_id=877143903]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_goi5m")
+
+[node name="DebugWorldButton" type="Button" parent="." unique_id=1909928734]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.068
+anchor_top = 0.014
+anchor_right = 0.068
+anchor_bottom = 0.014
+offset_left = 423.596
+offset_top = 256.942
+offset_right = 569.596
+offset_bottom = 287.942
+text = "start debug world"
+flat = true

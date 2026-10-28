@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cxtpcsyhp6yiv"]
+
+[ext_resource type="Script" uid="uid://dhbjiqj18nar3" path="res://game/scenes/Core/Core.cs" id="1_lywcf"]
+[ext_resource type="PackedScene" uid="uid://s74yi5f64elo" path="res://game/scenes/GUI/GUI.tscn" id="2_let7i"]
+
+[node name="Core" type="Node" unique_id=28151090]
+script = ExtResource("1_lywcf")
+
+[node name="GUI" parent="." unique_id=1313017551 instance=ExtResource("2_let7i")]

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cg36le88nfo00"]
+
+[ext_resource type="Script" uid="uid://c5h8khme3mqqu" path="res://game/scenes/Gameplay/Player/PlayerManager.cs" id="1_a32t3"]
+[ext_resource type="Script" uid="uid://dqwcj1n1hb36b" path="res://game/scenes/Gameplay/Player/ThirdPOVCam.cs" id="2_86y1a"]
+
+[node name="Player" type="Node3D" unique_id=784845284]
+script = ExtResource("1_a32t3")
+
+[node name="playerCamera" type="Camera3D" parent="." unique_id=2101639241]
+fov = 100.0
+
+[node name="VoxelViewer" type="VoxelViewer" parent="playerCamera" unique_id=1988329230]
+view_distance = 1024
+
+[node name="3rdPOVCam" type="Node3D" parent="." unique_id=1399928403]
+script = ExtResource("2_86y1a")
+
+[node name="3rdPOVSpring" type="SpringArm3D" parent="3rdPOVCam" unique_id=539076007]
+
+[node name="player3rdCamera" type="Camera3D" parent="3rdPOVCam/3rdPOVSpring" unique_id=1631223590]
