@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://qbcs4xudrvvp"]
+
+[ext_resource type="Script" uid="uid://uink5b6gf26v" path="res://game/scenes/GUI/Main Menus/Worlds/CreateWorld.cs" id="1_h503h"]
+
+[node name="CreateWorld" type="Control" unique_id=1188838167]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h503h")
+
+[node name="BackButton" type="Button" parent="." unique_id=173034261]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 575.0
+offset_right = 160.0
+offset_bottom = 610.0
+text = "Back"

@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://vr8luocysjcu"]
 
+[ext_resource type="Script" uid="uid://bf56iqfpm33u0" path="res://game/scenes/GUI/Main Menus/Worlds/WorldSelect.cs" id="1_tcmvn"]
+
 [node name="WorldSelect" type="Control" unique_id=1637644206]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,33 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_tcmvn")
+
+[node name="SavesList" type="ScrollContainer" parent="." unique_id=1261890315]
+custom_minimum_size = Vector2(800, 480)
+layout_mode = 0
+offset_left = 50.0
+offset_top = 40.0
+offset_right = 850.0
+offset_bottom = 520.0
+draw_focus_border = true
+scroll_hint_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SavesList" unique_id=198246056]
+layout_mode = 2
+
+[node name="NewWorld" type="Button" parent="." unique_id=1485535805]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 575.0
+offset_right = 280.0
+offset_bottom = 610.0
+text = "New World"
+
+[node name="BackButton" type="Button" parent="." unique_id=844629547]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 575.0
+offset_right = 160.0
+offset_bottom = 610.0
+text = "Back"
