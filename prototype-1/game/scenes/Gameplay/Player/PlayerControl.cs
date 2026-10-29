@@ -103,7 +103,7 @@ public class PlayerControl : IController
                 {
                     if (mode == povMode.third)
                     {
-                        turning3 = dir.X;   
+                        turning3 = -dir.X;   
 
                         var nttOrigin = playerNtt.GlobalTransform.Basis;
                         var fwd = new Vector3(nttOrigin.Z.X, 0, nttOrigin.Z.Z).Normalized();
